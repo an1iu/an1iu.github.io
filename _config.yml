@@ -57,8 +57,8 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  xiaohongshu      : "https://www.xiaohongshu.com/search_result?keyword=6291746447&source=web_profile_page"
-  rednote          : # e.g., "https://www.xiaohongshu.com/user/profile/YOUR_USER_ID" or just USER_ID
+  xiaohongshu      : # "https://www.xiaohongshu.com/search_result?keyword=6291746447&source=web_profile_page"
+  rednote          : "https://www.xiaohongshu.com/search_result?keyword=6291746447&source=web_profile_page"
 
 
 # Reading Files
