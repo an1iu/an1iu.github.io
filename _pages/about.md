@@ -32,8 +32,8 @@ I will soon pursue my master's degree at **CASIA (Institute of Automation, Chine
 - Embodied Intelligence  
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2025.09*: Admitted to the **Institute of Automation, Chinese Academy of Sciences (CASIA)** to pursue a Master's degree in Pattern Recognition and Intelligent Systems.  
+- *2022.09*: Enrolled in **Chongqing University** as an undergraduate student in Computer Science and Technology.  
 
 # 📝 Publications 
 
