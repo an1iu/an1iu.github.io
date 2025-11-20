@@ -1,0 +1,251 @@
+// Publications Section Styles
+.publications-section {
+    margin: 2em 0;
+    
+    h1 {
+        margin-bottom: 1.5em;
+        color: #444;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+// Enhanced Paper Box Styles
+.paper-box {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+    margin: 1.5em 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 9px 32px rgba(0, 0, 0, 0.15);
+        border-color: #ccc;
+    }
+    
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 0;
+    min-height: 180px;
+}
+
+.paper-box-image {
+    position: relative;
+    background: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    
+    > div {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    img {
+        max-width: 100%;
+        max-height: 140px;
+        object-fit: contain;
+        border-radius: 6px;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    
+    .badge {
+        position: absolute;
+        top: 0px;
+        left: 8px;
+        background: #4a4a4a;
+        color: white;
+        padding: 0.3em 0.6em;
+        border-radius: 4px;
+        font-size: 0.7em;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+    }
+}
+
+.paper-box-text {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    h3 {
+        margin: 0 0 0.8em 0;
+        font-size: 1.2em;
+        line-height: 1.3;
+        color: #444;
+        font-weight: 600;
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            
+            &:hover {
+                color: #666;
+            }
+        }
+    }
+    
+    .paper-authors {
+        margin: 0.8em 0;
+        font-size: 0.9em;
+        color: #666;
+        line-height: 1.4;
+        
+        strong {
+            color: #444;
+            font-weight: 600;
+        }
+    }
+    
+    .paper-venue {
+        display: inline-block;
+        background: #555;
+        color: white;
+        padding: 0.4em 1em;
+        border-radius: 20px;
+        font-size: 0.85em;
+        font-weight: 600;
+        margin: 1em 0;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    .paper-links {
+        display: flex;
+        gap: 0.8em;
+        flex-wrap: wrap;
+        margin-top: 1em;
+        
+        a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4em;
+            padding: 0.5em 1em;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85em;
+            transition: all 0.3s ease;
+            
+            &.project-link {
+                background: #555;
+                color: white;
+                
+                &:hover {
+                    background: #666;
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+                }
+            }
+            
+            &.paper-link {
+                background: #f8f8f8;
+                color: #444;
+                border: 1px solid #ddd;
+                
+                &:hover {
+                    background: #e8e8e8;
+                    transform: translateY(-2px);
+                }
+            }
+            
+            &.code-link {
+                background: #777;
+                color: white;
+                
+                &:hover {
+                    background: #888;
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+    
+    .citations-count {
+        margin-top: 0.8em;
+        font-size: 0.85em;
+        color: #666;
+        font-style: italic;
+    }
+}
+
+// Responsive Design for Publications
+@media (max-width: 768px) {
+    .paper-box {
+        grid-template-columns: 1fr;
+        margin: 1em 0;
+        
+        .paper-box-image {
+            padding: 0.8em;
+            
+            img {
+                max-height: 100px;
+            }
+        }
+        
+        .paper-box-text {
+            padding: 1.2em;
+            
+            h3 {
+                font-size: 1.1em;
+            }
+            
+            .paper-links {
+                flex-direction: column;
+                gap: 0.6em;
+                
+                a {
+                    text-align: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+// Loading animation for paper images
+.paper-box-image {
+    img {
+        opacity: 0;
+        animation: fadeInImage 0.6s ease forwards;
+    }
+}
+
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+// Special highlight for featured papers
+.paper-box.featured {
+    border: 2px solid #555;
+    
+    .paper-box-image .badge {
+        background: #333;
+    }
+}
