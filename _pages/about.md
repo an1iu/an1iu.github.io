@@ -108,9 +108,9 @@ I will soon pursue my master's degree at **CASIA (Institute of Automation, Chine
   </div>
 </div>  
 
-<div class="publications-section">
-
 # 📝 Publications 
+
+<div class="publications-section">
 
 <div class='paper-box featured'>
   <div class='paper-box-image'>
