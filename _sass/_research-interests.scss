@@ -1,0 +1,104 @@
+// Research Interests Styles
+.research-interests-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1em;
+    margin: 1.5em 0;
+    
+    .interest-item {
+        display: flex;
+        align-items: center;
+        padding: 1em;
+        border-radius: 8px;
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        transition: all 0.2s ease;
+        
+        &:hover {
+            background: #e9ecef;
+            transform: translateY(-1px);
+        }
+        
+        .interest-icon {
+            font-size: 1.5em;
+            margin-right: 0.8em;
+            flex-shrink: 0;
+            line-height: 1;
+        }
+        
+        .interest-content {
+            flex: 1;
+            
+            h3 {
+                margin: 0;
+                font-size: 1em;
+                font-weight: 600;
+                color: #2c3e50;
+            }
+            
+            p {
+                display: none; // Hide descriptions for more compact layout
+            }
+        }
+    }
+}
+
+// Alternative layout for larger screens
+@media (min-width: 1200px) {
+    .research-interests-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.2em;
+        
+        .interest-item {
+            .interest-icon {
+                font-size: 1.6em;
+            }
+            
+            .interest-content {
+                h3 {
+                    font-size: 1.05em;
+                }
+            }
+        }
+    }
+}
+
+// Mobile responsive design
+@media (max-width: 768px) {
+    .research-interests-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8em;
+        
+        .interest-item {
+            padding: 0.8em;
+            
+            .interest-icon {
+                font-size: 1.3em;
+                margin-right: 0.6em;
+            }
+            
+            .interest-content {
+                h3 {
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+}
+
+// Simplified animation
+.interest-item {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+    
+    &:nth-child(1) { animation-delay: 0.05s; }
+    &:nth-child(2) { animation-delay: 0.1s; }
+    &:nth-child(3) { animation-delay: 0.15s; }
+    &:nth-child(4) { animation-delay: 0.2s; }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
