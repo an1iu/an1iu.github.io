@@ -149,7 +149,7 @@ I will soon pursue my master's degree at **CASIA (Institute of Automation, Chine
 
 <!-- - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
-# 🎖 Honors and Awards
+<!--# 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.
 
@@ -160,10 +160,22 @@ I will soon pursue my master's degree at **CASIA (Institute of Automation, Chine
 
 # 💻 Internships
 - *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
-
+-->
 
 <div class="visitor-map-container">
   <!-- ClustrMaps Widget - Hidden mode (tracks visitors but doesn't display map) -->
   <div class="clustrmaps-widget">
     <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=BI2fOLiOfyWB8fBOW741241yGqhmnO63zmdn9b5yl7I&cl=ffffff&w=0"></script>
+  </div></div>
+
+<!-- Footer Declaration -->
+<div class="footer-declaration">
+  <hr class="footer-separator">
+  <div class="footer-content">
+    <p class="copyright">© 2025 An Liu. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> ＆ <a href="https://github.com/RayeRen/acad-homepage.github.io" target="_blank">AcadHomepage</a>.</p>
+    <p class="acknowledgment">
+      This website incorporates <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>, distributed under the SIL OFL 1.1 and MIT License.
+      Inspired by <a href="https://github.com/academicpages/academicpages.github.io" target="_blank">Academic Pages</a>.
+    </p>
   </div>
+</div>

@@ -363,3 +363,68 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Footer Declaration Styles */
+.footer-declaration {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-separator {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 2rem auto 1.5rem auto;
+    max-width: 600px;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.footer-content .copyright {
+    font-weight: 500;
+    color: #333;
+}
+
+.footer-content .acknowledgment {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.footer-content a {
+    color: #0366d6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content a:hover {
+    color: #0256cc;
+    text-decoration: underline;
+}
+
+/* Responsive design for footer */
+@media (max-width: 768px) {
+    .footer-declaration {
+        margin-top: 3rem;
+        padding: 1.5rem 1rem 0;
+    }
+    
+    .footer-content {
+        font-size: 0.85rem;
+    }
+    
+    .footer-content .acknowledgment {
+        font-size: 0.8rem;
+    }
+}
