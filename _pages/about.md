@@ -127,7 +127,7 @@ I will soon pursue my master's degree at **CASIA (Institute of Automation, Chine
     </h3>
     
     <div class="paper-authors">
-      <strong>An Liu</strong>, Bingxi Liu, Hao Chen, Jinqiang Cui, Yiqun Wang*, Hong Zhang*
+      Bingxi Liu†, <strong>An Liu†</strong>,  Hao Chen, Jinqiang Cui, Yiqun Wang*, Hong Zhang*
     </div>
     
     <div class="paper-links">
