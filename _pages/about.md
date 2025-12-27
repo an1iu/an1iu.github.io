@@ -115,7 +115,7 @@ I will soon pursue my master's degree at **CASIA (Institute of Automation, Chine
 <div class='paper-box featured'>
   <div class='paper-box-image'>
     <div>
-      <div class="badge">ArXiv</div>
+      <div class="badge">CVM 26 Oral</div>
       <img src='images/mtpcr.png' alt="MT-PCR Method Overview" width="100%">
     </div>
   </div>
