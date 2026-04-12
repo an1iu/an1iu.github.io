@@ -95,8 +95,8 @@ I will soon pursue my master's degree at **CASIA (Institute of Automation, Chine
 
 <div class="news-scroll-container">
   <div class="news-item">
-    <span class="news-date">2025.11</span>
-    <span class="news-content">Started research internship at <strong>MAIS@CASIA</strong>.</span>
+    <span class="news-date">2026.04</span>
+    <span class="news-content">Congratulations!Our paper <strong>MT-PCR</strong> was selected as <strong>Best Paper</strong> at <strong>CVM 2026</strong>.</span>
   </div>
   <div class="news-item">
     <span class="news-date">2025.09</span>
@@ -115,7 +115,7 @@ I will soon pursue my master's degree at **CASIA (Institute of Automation, Chine
 <div class='paper-box featured'>
   <div class='paper-box-image'>
     <div>
-      <div class="badge">CVM 26 Oral</div>
+      <div class="badge">CVM 2026 Best Paper</div>
       <img src='images/mtpcr.png' alt="MT-PCR Method Overview" width="100%">
     </div>
   </div>
