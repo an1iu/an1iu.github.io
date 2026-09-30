@@ -1,0 +1,17 @@
+# Newest first. Wrap your own name in <strong> in `authors`.
+# Optional fields: award, code, image.
+- title: "HAM-VLN: Harnessing Hierarchical Agentic Memory for Zero-Shot Vision-and-Language Navigation"
+  venue: "arXiv 2026"
+  authors: "<strong>An Liu</strong>, Bingxi Liu, Hongyu Ding, Yixuan Jiang, Yaran Chen, Fulin Tang, Cong Leng, Hong Zhang, Jian Cheng"
+  image: "images/ham-vln-web.jpg"
+  url: "https://arxiv.org/abs/2607.29600"
+  paper: "https://arxiv.org/pdf/2607.29600"
+
+- title: "MT-PCR: A Hybrid Mamba-Transformer with Spatial Serialization for Hierarchical Point Cloud Registration"
+  venue: "CVM 2026"
+  award: "Best Paper"
+  authors: "Bingxi Liu*, <strong>An Liu*</strong>, Hao Chen, Huaqi Tao, Jinqiang Cui, Yiqun Wang†, Hong Zhang†"
+  image: "images/mtpcr.png"
+  url: "https://arxiv.org/abs/2506.13183"
+  paper: "https://arxiv.org/pdf/2506.13183"
+  code: "https://github.com/an1iu/MT-PCR"

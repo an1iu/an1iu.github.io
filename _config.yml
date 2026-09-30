@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "An Liu"
-description              : "Incoming M.S. Student in Computer Science (Fall 2026). "
+description              : "M.S. student in Pattern Recognition and Intelligent Systems at CASIA."
 repository               : "an1iu/an1iu.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -22,13 +22,13 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "An Liu"
-  avatar           : "images/aliu.jpg" # relative path from the root
+  avatar           : "images/aliu-web.jpg" # relative path from the root
   bio              : "CASIA"
   location         : "Beijing, China"
   employer         :
   pubmed           : 
-  googlescholar    : #"https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
-  email            : "aliu@stu.cqu.edu.cn"
+  googlescholar    : "https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&hl=zh-CN&user=5b9ldoAAAAAJ"
+  email            : "liuan2026@ia.ac.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

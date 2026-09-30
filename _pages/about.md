@@ -2,180 +2,112 @@
 permalink: /
 title: ""
 excerpt: ""
-author_profile: true
-redirect_from: 
+author_profile: false
+redirect_from:
   - /about/
   - /about.html
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
-
-<span class='anchor' id='about-me'></span>
-
-# 👦🏻 About Me
-Hi, I'm **An Liu (刘安)**, an undergraduate student in **Computer Science and Technology, Chongqing University**.  
-My research interests include **3D Vision, Robotic Learning, Multimodal Perception, and Embodied Intelligence**.  
-
-I will soon pursue my master's degree at **CASIA (Institute of Automation, Chinese Academy of Sciences)**, where I hope to conduct impactful research and contribute to the field of artificial intelligence.  
-
-
-<!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
-
-# 💡 Research Interests
-
-<div class="research-interests-container">
-  <div class="interest-item">
-    <div class="interest-icon">🎯</div>
-    <div class="interest-content">
-      <h3>3D Vision</h3>
+<div class="home-page">
+  <section class="hero" id="about" aria-labelledby="home-title">
+    <figure class="hero__portrait">
+      <img src="{{ site.author.avatar }}" alt="Portrait of An Liu" width="480" height="600" fetchpriority="high">
+      <figcaption>{% include icon.html name="pin" %} Beijing, China</figcaption>
+    </figure>
+    <div class="hero__copy">
+      <h1 id="home-title">An Liu <span lang="zh">刘安</span></h1>
+      <p class="hero__lede">M.S. student at the Institute of Automation, Chinese Academy of Sciences.</p>
+      <p class="hero__intro">I study intelligent agents that perceive, reason, and act in the physical world, with a particular focus on Embodied AI, Agentic Systems, and World Models.</p>
+      <div class="actions" aria-label="Profile links">
+        <a class="button button--primary" href="mailto:{{ site.author.email }}">{% include icon.html name="mail" %} Email</a>
+        <a class="button" href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer">{% include icon.html name="scholar" %} Scholar</a>
+        <a class="button" href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener noreferrer">{% include icon.html name="github" %} GitHub</a>
+      </div>
     </div>
-  </div>
-  
-  <div class="interest-item">
-    <div class="interest-icon">🤖</div>
-    <div class="interest-content">
-      <h3>Robotic Learning</h3>
-    </div>
-  </div>
-  
-  <div class="interest-item">
-    <div class="interest-icon">🧠</div>
-    <div class="interest-content">
-      <h3>Multimodal Perception</h3>
-    </div>
-  </div>
-  
-  <div class="interest-item">
-    <div class="interest-icon">🌟</div>
-    <div class="interest-content">
-      <h3>Embodied Intelligence</h3>
-    </div>
-  </div>
-</div>  
+  </section>
 
-# 🎩 Educations
+  <section class="section" id="news" aria-labelledby="news-title">
+    <h2 id="news-title">News</h2>
+    <ol class="news" aria-label="News">
+      <li><time datetime="2026-09">Sep 2026</time><p>Began an M.S. at the <strong>Institute of Automation, Chinese Academy of Sciences (CASIA)</strong>.</p></li>
+      <li><time datetime="2026-04">Apr 2026</time><p><strong>MT-PCR</strong> received the Best Paper Award at CVM 2026.</p></li>
+      <li><time datetime="2025-09">Sep 2025</time><p>Admitted to CASIA for an M.S. in Pattern Recognition and Intelligent Systems.</p></li>
+      <li><time datetime="2022-09">Sep 2022</time><p>Began a B.E. in Computer Science and Technology at Chongqing University.</p></li>
+    </ol>
+    <script>
+      (function () {
+        var box = document.querySelector('.news');
+        if (!box) return;
+        var items = box.querySelectorAll('li');
+        function edges() {
+          box.classList.toggle('at-top', box.scrollTop <= 1);
+          box.classList.toggle('at-end', box.scrollTop + box.clientHeight >= box.scrollHeight - 1);
+        }
+        function size() {
+          var more = items.length > 3;
+          box.classList.toggle('is-scrollable', more);
+          box.style.maxHeight = more ? (items[3].offsetTop + 36) + 'px' : '';
+          if (more) box.setAttribute('tabindex', '0'); else box.removeAttribute('tabindex');
+          edges();
+        }
+        box.addEventListener('scroll', edges, { passive: true });
+        window.addEventListener('resize', size);
+        window.addEventListener('load', size);
+        size();
+      })();
+    </script>
+  </section>
 
-<div class='experience-section'>
-
-<div class='experience-item'>
-<div class='experience-logo'>
-<img src='images/casia-logo.png' alt="CASIA" width="60" height="60">
-</div>
-<div class='experience-content'>
-<div class='experience-header'>
-<strong>Institute Automation, Chinese Academy of Sciences</strong>
-<span class='experience-date'>Sep 2026 – July 2029</span>
-</div>
-<div class='experience-role'>Incoming M.S. in <a href="https://mais.ia.ac.cn/">MAIS@CASIA</a></div>
-</div>
-</div>
-
-<div class='experience-item'>
-<div class='experience-logo'>
-<img src='images/cqu-logo.png' alt="Chongqing University" width="60" height="60">
-</div>
-<div class='experience-content'>
-<div class='experience-header'>
-<strong>Chongqing University</strong>
-<span class='experience-date'>Sep 2022 – July 2026</span>
-</div>
-<div class='experience-role'>Undergraduate Student</div>
-<div class='experience-degree'>B.E in <a href="https://cs.cqu.edu.cn/">Computer Science and Technology</a></div>
-</div>
-</div>
-
-</div>
-
-# 🔥 News
-
-<div class="news-scroll-container">
-  <div class="news-item">
-    <span class="news-date">2026.04</span>
-    <span class="news-content">Congratulations🎉🎉 Our paper <strong>MT-PCR</strong> was selected as <strong>Best Paper</strong> at <strong>CVM 2026</strong>.</span>
-  </div>
-  <div class="news-item">
-    <span class="news-date">2025.09</span>
-    <span class="news-content">Admitted to the <strong>Institute of Automation, Chinese Academy of Sciences (CASIA)</strong> to pursue a Master's degree in Pattern Recognition and Intelligent Systems.</span>
-  </div>
-  <div class="news-item">
-    <span class="news-date">2022.09</span>
-    <span class="news-content">Enrolled in <strong>Chongqing University</strong> as an undergraduate student in Computer Science and Technology.</span>
-  </div>
-</div>  
-
-# 📝 Publications 
-
-<div class="publications-section">
-
-<div class='paper-box featured'>
-  <div class='paper-box-image'>
+  <section class="section" id="publications" aria-labelledby="publications-title">
+    <h2 id="publications-title">Publication</h2>
     <div>
-      <div class="badge">CVM 2026 Best Paper</div>
-      <img src='images/mtpcr.png' alt="MT-PCR Method Overview" width="100%">
+      <ol class="pubs">
+        {% for pub in site.data.publications %}
+        <li class="pub">
+          {% if pub.image %}<a class="pub__figure" href="{{ pub.url }}" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="{{ pub.image }}" alt="" loading="lazy"></a>{% endif %}
+          <div class="pub__body">
+            <p class="pub__meta"><span>{{ pub.venue }}</span>{% if pub.award %}<span class="tag">{% include icon.html name="award" %} {{ pub.award }}</span>{% endif %}</p>
+            <h3 class="pub__title"><a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a></h3>
+            <p class="pub__authors">{{ pub.authors }}</p>
+            <p class="pub__links">
+              {% if pub.paper %}<a href="{{ pub.paper }}" target="_blank" rel="noopener noreferrer">{% include icon.html name="paper" %} Paper</a>{% endif %}
+              {% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener noreferrer">{% include icon.html name="github" %} Code</a>{% endif %}
+            </p>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
     </div>
-  </div>
-  <div class='paper-box-text'>
-    <h3>
-      <a href="https://arxiv.org/pdf/2506.13183" target="_blank">
-        MT-PCR: A Hybrid Mamba-Transformer with Spatial Serialization for Hierarchical Point Cloud Registration
-      </a>
-    </h3>
-    
-    <div class="paper-authors">
-      Bingxi Liu*, <strong>An Liu*</strong>,  Hao Chen, Huaqi Tao, Jinqiang Cui, Yiqun Wang†, Hong Zhang†
-    </div>
-    
-    <div class="paper-links">
-      <a href="https://arxiv.org/pdf/2506.13183" class="paper-link" target="_blank">
-        📄 Paper
-      </a>
-      <a href="https://github.com/an1iu/MT-PCR" class="paper-link" target="_blank">
-        💻 Code
-      </a>
-    </div>
-    
-    <div class="citations-count">
-      <span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span>
-    </div>
-  </div>
-</div>
+  </section>
 
-</div>
+  <section class="section" id="education" aria-labelledby="education-title">
+    <h2 id="education-title">Education</h2>
+    <ol class="timeline">
+      <li>
+        <span class="timeline__logo"><img src="images/casia-logo-web.png" alt="" loading="lazy"></span>
+        <div>
+          <h3>Institute of Automation, Chinese Academy of Sciences</h3>
+          <p>M.S., Pattern Recognition and Intelligent Systems · <a href="https://mais.ia.ac.cn/" target="_blank" rel="noopener noreferrer">MAIS</a></p>
+        </div>
+        <time>2026 – Present</time>
+      </li>
+      <li>
+        <span class="timeline__logo"><img src="images/cqu-logo-web.png" alt="" loading="lazy"></span>
+        <div>
+          <h3>Chongqing University</h3>
+          <p>B.E., <a href="https://cs.cqu.edu.cn/" target="_blank" rel="noopener noreferrer">Computer Science and Technology</a></p>
+        </div>
+        <time>2022 – 2026</time>
+      </li>
+    </ol>
+  </section>
 
-<!-- - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
-
-<!--# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.
-
-
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
-
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
--->
-
-<div class="visitor-map-container">
-  <!-- ClustrMaps Widget - Hidden mode (tracks visitors but doesn't display map) -->
-  <div class="clustrmaps-widget">
+  <div class="visitor-map" aria-hidden="true">
     <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=BI2fOLiOfyWB8fBOW741241yGqhmnO63zmdn9b5yl7I&cl=ffffff&w=0"></script>
-  </div></div>
-
-<!-- Footer Declaration -->
-<div class="footer-declaration">
-  <hr class="footer-separator">
-  <div class="footer-content">
-    <p class="copyright">© 2025 An Liu. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> ＆ <a href="https://github.com/RayeRen/acad-homepage.github.io" target="_blank">AcadHomepage</a>.</p>
-    <p class="acknowledgment">
-      This website incorporates <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>, distributed under the SIL OFL 1.1 and MIT License.
-      Inspired by <a href="https://github.com/academicpages/academicpages.github.io" target="_blank">Academic Pages</a>.
-    </p>
   </div>
+
+  <footer class="site-footer">
+    <p>© {{ site.time | date: '%Y' }} An Liu</p>
+    <a class="to-top" href="#about" target="_self">Back to top {% include icon.html name="arrow" %}</a>
+  </footer>
 </div>

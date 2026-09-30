@@ -1,4 +1,10 @@
 # main links links
 main:
-  - title: "Homepage"
+  - title: "An Liu"
     url: "/"
+  - title: "News"
+    url: "/#news"
+  - title: "Publication"
+    url: "/#publications"
+  - title: "Education"
+    url: "/#education"

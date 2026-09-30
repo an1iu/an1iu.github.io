@@ -1,1 +1,1 @@
-I use [Acad-Homepage](https://github.com/RayeRen/acad-homepage.github.io) as my personal homepage
+personal homepage
