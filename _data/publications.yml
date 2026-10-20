@@ -8,6 +8,13 @@
   paper: "https://arxiv.org/pdf/2607.29600"
   project: "https://an1iu.github.io/HAM-VLN/"
 
+- title: "GeoScaffold: Learning Compact Geometric Latents via Reconstruction for Efficient Vision-Language Navigation"
+  venue: "arXiv 2026"
+  authors: "Yixuan Jiang, Wentong Li, <strong>An Liu</strong>, Zihao Xin, Fulin Tang, Cong Leng, Yang Gao, Jian Cheng"
+  image: "images/geoscaffold.png"
+  url: "https://arxiv.org/abs/2610.02697"
+  paper: "https://arxiv.org/pdf/2610.02697"
+
 - title: "MT-PCR: A Hybrid Mamba-Transformer with Spatial Serialization for Hierarchical Point Cloud Registration"
   venue: "CVM 2026"
   award: "Best Paper"
