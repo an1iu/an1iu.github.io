@@ -4,7 +4,7 @@
   venue: "arXiv 2026"
   authors: "<strong>An Liu</strong>, Bingxi Liu, Hongyu Ding, Yixuan Jiang, Yaran Chen, Fulin Tang, Cong Leng, Hong Zhang, Jian Cheng"
   image: "images/ham-vln-web.jpg"
-  url: "https://arxiv.org/abs/2607.29600"
+  url: "https://an1iu.github.io/HAM-VLN/"
   paper: "https://arxiv.org/pdf/2607.29600"
 
 - title: "MT-PCR: A Hybrid Mamba-Transformer with Spatial Serialization for Hierarchical Point Cloud Registration"
