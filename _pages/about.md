@@ -71,6 +71,7 @@ redirect_from:
             <p class="pub__authors">{{ pub.authors }}</p>
             <p class="pub__links">
               {% if pub.paper %}<a href="{{ pub.paper }}" target="_blank" rel="noopener noreferrer">{% include icon.html name="paper" %} Paper</a>{% endif %}
+              {% if pub.project %}<a href="{{ pub.project }}" target="_blank" rel="noopener noreferrer">{% include icon.html name="link" %} Project Page</a>{% endif %}
               {% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener noreferrer">{% include icon.html name="github" %} Code</a>{% endif %}
             </p>
           </div>

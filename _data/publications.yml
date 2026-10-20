@@ -6,6 +6,7 @@
   image: "images/ham-vln-web.jpg"
   url: "https://an1iu.github.io/HAM-VLN/"
   paper: "https://arxiv.org/pdf/2607.29600"
+  project: "https://an1iu.github.io/HAM-VLN/"
 
 - title: "MT-PCR: A Hybrid Mamba-Transformer with Spatial Serialization for Hierarchical Point Cloud Registration"
   venue: "CVM 2026"
