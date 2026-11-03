@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "An Liu"
-  avatar           : "images/aliu-web.jpg" # relative path from the root
+  avatar           : "images/la_guitar.png" # relative path from the root
   bio              : "CASIA"
   location         : "Beijing, China"
   employer         :
