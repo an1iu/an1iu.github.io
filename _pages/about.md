@@ -26,38 +26,6 @@ redirect_from:
     </div>
   </section>
 
-  <section class="section" id="news" aria-labelledby="news-title">
-    <h2 id="news-title">News</h2>
-    <ol class="news" aria-label="News">
-      <li><time datetime="2026-09">Sep 2026</time><p>Began an M.S. at the <strong>Institute of Automation, Chinese Academy of Sciences (CASIA)</strong>.</p></li>
-      <li><time datetime="2026-04">Apr 2026</time><p><strong>MT-PCR</strong> received the Best Paper Award at CVM 2026.</p></li>
-      <li><time datetime="2025-09">Sep 2025</time><p>Admitted to CASIA for an M.S. in Pattern Recognition and Intelligent Systems.</p></li>
-      <li><time datetime="2022-09">Sep 2022</time><p>Began a B.E. in Computer Science and Technology at Chongqing University.</p></li>
-    </ol>
-    <script>
-      (function () {
-        var box = document.querySelector('.news');
-        if (!box) return;
-        var items = box.querySelectorAll('li');
-        function edges() {
-          box.classList.toggle('at-top', box.scrollTop <= 1);
-          box.classList.toggle('at-end', box.scrollTop + box.clientHeight >= box.scrollHeight - 1);
-        }
-        function size() {
-          var more = items.length > 3;
-          box.classList.toggle('is-scrollable', more);
-          box.style.maxHeight = more ? (items[3].offsetTop + 36) + 'px' : '';
-          if (more) box.setAttribute('tabindex', '0'); else box.removeAttribute('tabindex');
-          edges();
-        }
-        box.addEventListener('scroll', edges, { passive: true });
-        window.addEventListener('resize', size);
-        window.addEventListener('load', size);
-        size();
-      })();
-    </script>
-  </section>
-
   <section class="section" id="publications" aria-labelledby="publications-title">
     <h2 id="publications-title">Publication</h2>
     <div>

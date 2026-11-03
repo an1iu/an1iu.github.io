@@ -2,8 +2,6 @@
 main:
   - title: "An Liu"
     url: "/"
-  - title: "News"
-    url: "/#news"
   - title: "Publication"
     url: "/#publications"
   - title: "Experience"

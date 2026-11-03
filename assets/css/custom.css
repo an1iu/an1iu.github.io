@@ -114,23 +114,6 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--s
 .home-page .timeline p { margin-top: var(--s-1); color: var(--ink-2); font-size: 15px; line-height: 1.6; }
 .home-page .timeline time { padding-top: 2px; white-space: nowrap; }
 
-/* News */
-/* Shows three items; any older ones scroll inside and fade out at the edges. */
-@property --fade-top { syntax: "<length>"; inherits: false; initial-value: 0px; }
-@property --fade-bottom { syntax: "<length>"; inherits: false; initial-value: 0px; }
-.home-page .news { position: relative; width: 80%; margin-inline: auto; }
-.home-page .news.is-scrollable { --fade-top: 40px; --fade-bottom: 40px; overflow-y: auto; scrollbar-width: none; -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 var(--fade-top), #000 calc(100% - var(--fade-bottom)), transparent 100%); mask-image: linear-gradient(to bottom, transparent 0, #000 var(--fade-top), #000 calc(100% - var(--fade-bottom)), transparent 100%); transition: --fade-top .35s var(--ease), --fade-bottom .35s var(--ease); }
-.home-page .news.is-scrollable::-webkit-scrollbar { display: none; }
-.home-page .news.is-scrollable.at-top { --fade-top: 0px; }
-.home-page .news.is-scrollable.at-end { --fade-bottom: 0px; }
-.home-page .news:focus-visible { outline-offset: -2px; }
-.home-page .news li { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: var(--s3); padding: 20px 0; border-top: 1px solid var(--line); }
-.home-page .news li:first-child { padding-top: 0; border-top: 0; }
-.home-page .news li:last-child { padding-bottom: 0; }
-.home-page .news time { padding-top: 2px; white-space: nowrap; }
-.home-page .news p { font-size: 15px; line-height: 1.65; }
-.news strong { font-weight: 500; }
-
 /* Footer */
 .visitor-map { height: 0; overflow: hidden; }
 .site-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s0) var(--s3); padding: var(--s4) 0 var(--s5); border-top: 1px solid var(--line); }
@@ -172,7 +155,6 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--s
   .home-page .timeline__logo { grid-row: 1 / 3; width: 40px; height: 40px; padding: 5px; border-radius: 8px; }
   .home-page .timeline time { grid-column: 2; grid-row: 1; padding: 0; }
   .home-page .timeline li > div { grid-column: 2; }
-  .home-page .news li { grid-template-columns: 1fr; gap: var(--s-1); }
   .site-footer { flex-direction: column; align-items: flex-start; gap: var(--s0); padding: var(--s3) 0 var(--s4); }
 }
 
