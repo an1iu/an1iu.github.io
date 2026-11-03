@@ -90,7 +90,7 @@ redirect_from:
           <h3>Horizon Robotics</h3>
           <p>Research Intern</p>
         </div>
-        <time datetime="2026-11">2026.11–present</time>
+        <time datetime="2026-11">2026.11–Present</time>
       </li>
     </ol>
   </section>
