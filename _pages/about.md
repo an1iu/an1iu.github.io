@@ -71,6 +71,7 @@ redirect_from:
         <div>
           <h3>Institute of Automation, Chinese Academy of Sciences</h3>
           <p>M.S., Pattern Recognition and Intelligent Systems · <a href="https://mais.ia.ac.cn/" target="_blank" rel="noopener noreferrer">MAIS</a></p>
+          <p>Supervised by Assoc. Prof. <a href="https://www.ia.cas.cn/rcdw/fyjy/202404/t20240422_7129937.html" target="_blank" rel="noopener noreferrer">Fulin Tang</a></p>
         </div>
         <time>2026 – Present</time>
       </li>
@@ -79,6 +80,7 @@ redirect_from:
         <div>
           <h3>Chongqing University</h3>
           <p>B.E., <a href="https://cs.cqu.edu.cn/" target="_blank" rel="noopener noreferrer">Computer Science and Technology</a></p>
+          <p>Supervised by Assoc. Prof. <a href="https://sites.google.com/view/yiqun-wang/" target="_blank" rel="noopener noreferrer">Yiqun Wang</a></p>
         </div>
         <time>2022 – 2026</time>
       </li>
