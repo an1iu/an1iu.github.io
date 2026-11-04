@@ -41,6 +41,7 @@ redirect_from:
               {% if pub.paper %}<a href="{{ pub.paper }}" target="_blank" rel="noopener noreferrer">{% include icon.html name="paper" %} Paper</a>{% endif %}
               {% if pub.project %}<a href="{{ pub.project }}" target="_blank" rel="noopener noreferrer">{% include icon.html name="link" %} Project</a>{% endif %}
               {% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener noreferrer">{% include icon.html name="github" %} Code</a>{% endif %}
+              {% if pub.wechat %}<a href="{{ pub.wechat }}" target="_blank" rel="noopener noreferrer">{% include icon.html name="wechat" %} {{ pub.wechat_label | default: "WeChat" }}</a>{% endif %}
             </p>
           </div>
         </li>

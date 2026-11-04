@@ -1,5 +1,5 @@
 # Newest first. Wrap your own name in <strong> in `authors`.
-# Optional fields: award, code, image.
+# Optional fields: award, code, image, wechat, wechat_label.
 - title: "HAM-VLN: Harnessing Hierarchical Agentic Memory for Zero-Shot Vision-and-Language Navigation"
   venue: "arXiv 2026"
   authors: "<strong>An Liu</strong>, Bingxi Liu, Hongyu Ding, Yixuan Jiang, Yaran Chen, Fulin Tang, Cong Leng, Hong Zhang, Jian Cheng"
@@ -7,6 +7,9 @@
   url: "https://an1iu.github.io/HAM-VLN/"
   paper: "https://arxiv.org/pdf/2607.29600"
   project: "https://an1iu.github.io/HAM-VLN/"
+  code: "https://github.com/an1iu/HAM-VLN"
+  wechat: "https://mp.weixin.qq.com/s/hMnEcW4cQ9IgvsEgE9NyPg"
+  wechat_label: "视觉语言导航"
 
 - title: "GeoScaffold: Learning Compact Geometric Latents via Reconstruction for Efficient Vision-Language Navigation"
   venue: "arXiv 2026"
